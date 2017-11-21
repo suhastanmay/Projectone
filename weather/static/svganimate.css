@@ -1,0 +1,41 @@
+svg {
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  overflow: visible;
+}
+
+.svg-icon {
+  cursor: pointer;
+}
+.svg-icon path {
+  stroke: rgba(25, 255, 255, 0.9);
+  fill: none;
+  stroke-width: 1;
+}
+.svgtop-icon path{
+  stroke: #00a78e;
+  fill: none;
+  stroke-width: 1;
+
+}
+.login__icon.name path {
+  stroke-dasharray: 73.50196075439453;
+  stroke-dashoffset: 73.50196075439453;
+  -webkit-animation: animatePath 2s 0.5s forwards;
+          animation: animatePath 2s 0.5s forwards;
+}
+.login__icon {
+  margin-bottom: -0.4rem;
+  margin-right: 0rem;
+}
+@-webkit-keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

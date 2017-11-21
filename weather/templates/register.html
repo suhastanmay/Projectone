@@ -1,0 +1,69 @@
+{% load static %}
+<html >
+<!--similar comments as login.html-->
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link href="{% static 'jquery.min.js' %}" rel="stylesheet">
+
+    <link  href="{% static 'login.js' %}" rel="stylesheet">
+
+  <link rel='stylesheet prefetch' href="{% static 'fonts.css' %}">
+  <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<style>.layer0{
+  position: relative;
+  height: 100%;
+  background-image: "plant.jpg";
+  background-size: cover;
+  overflow: auto;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+</style>
+<body background="{% static 'plant.jpg'%}">
+
+
+  <div class="layer0" >
+  <div class="layer1">
+    <div class="login">
+       <div class="login__form">
+ <form method="POST">
+
+           <div class="login__row">
+{% csrf_token %}
+          <svg class="login__icon name svg-icon" viewBox="0 0 8 8">
+            <path d="M4 0l-4 2v6h8v-6l-4-2zm0 1.13l3 1.5v1.88l-3 1.5-3-1.5v-1.88l3-1.5zm-2 1.88v1l2 1 2-1v-1h-4z" />
+          </svg>
+          <input type="text" class="login__input name" name="email" placeholder="Email address" />
+        </div>
+        <div class="login__row">
+
+          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+          </svg>
+          <input type="text" class="login__input name" placeholder="Username" name="username" />
+        </div>
+
+        <div class="login__row">
+          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="password" class="login__input pass" placeholder="Password" name="password"/>
+        </div>
+        <button type="submit" class="login__submit">Sign Up Now</button>
+      </form>
+           <p class="login__signup">Already have an account? &nbsp;<a href="{% url 'weather:login_user' %}">Sign in </a></p>
+
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+  <script src="{% static 'jquery.min.js' %}"></script>
+
+    <script  src="{% static 'login.js' %}"></script>
+
+</body>
+</html>

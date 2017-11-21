@@ -1,0 +1,91 @@
+.chart{
+  padding-left:240px;
+}
+.jumbotron {
+ padding-left:240px;
+}
+
+html.loading {
+    background: #0c0c0c url('loading.gif') no-repeat 50% 50%;
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body{
+
+    opacity: 0;
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
+}
+
+body {
+  padding-top: 50px;
+   background-color:#282828;
+}
+html.loading nav{
+
+    opacity: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+}
+
+
+.sidebar {
+  background: #0E0B16;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+
+  margin-bottom: 15px;
+  background: #0E0B16;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+html, body {
+    min-height: 100%;
+    background: #E7DFDD
+}

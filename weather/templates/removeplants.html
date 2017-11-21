@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <link href="{% static 'login.css' %}" rel="stylesheet"><!-- sub-bootstrap and modified style functionalities-->
+
+      <div class="jumbotron">
+          <div class="container">
+              <form method="POST">
+    <!--cookies issue-->
+        {% csrf_token %}
+                  <div class="login__row">
+                      <input type="text" class="login__input" placeholder="Enter ID to delete" name="pid1"/>
+                  </div>
+                  <button  class="login__submit" >DELETE</button>
+              </form>
+          </div>
+      </div>
+{% endblock %}

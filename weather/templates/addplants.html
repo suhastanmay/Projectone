@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <link href="{% static 'login.css' %}" rel="stylesheet"><!-- sub-bootstrap and modified style functionalities-->
+  <div class="jumbotron">
+      <div class="container">
+          <form method="POST">
+<!--cookies issue-->
+    {% csrf_token %}
+              <div class="login__row">
+                  <input type="text" class="login__input" placeholder="Enter New Plant ID" name="pid1"/>
+              </div>
+      <div class="login__row">
+<!--allows to draw icons-animation-->
+        <input type="text" class="login__input" placeholder="Latitude" name="latitude" />
+      </div>
+      <div class="login__row">
+         <input type="text" class="login__input" placeholder="Longitude" name="longitude"/>
+      </div>
+        <button  class="login__submit" >ADD</button>
+</form>
+      </div>
+  </div>
+{% endblock %}
